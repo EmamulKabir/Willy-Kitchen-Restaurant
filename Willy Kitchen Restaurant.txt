@@ -1,0 +1,549 @@
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>Willy Kitchen Restaurant</title>
+    <meta content="" name="description"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+    <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet"></link>
+    <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/47f44d10b4.js" crossorigin="anonymous"></script>
+    <style> 
+body {
+                text-align:center;
+	margin:0px;
+	padding:0px;
+}
+.header_area {
+	margin-top: 20px;
+}
+.header_area h1 {
+	padding: 0;
+	margin-bottom: -20px;
+	font-size: 40px;
+    border-top: 1px dashed red;
+	font-family: andalus;
+}
+.header_area h6 {
+	padding: 0;
+	font-size: 20px;
+	font-family: andalus;
+}
+.header_area nav {
+	font-family: andalus;
+	font-size:10px;
+}
+.header_area nav ul{}
+.header_area nav ul li {
+	list-style: none;
+	display: inline;
+	font-size: 20px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.header_area nav ul li a{
+	color:#474749;
+}
+.header_area nav ul li a:hover{
+	text-decoration:none;
+	color:#EB5058;
+}
+.content_area {
+	background:url('https://1.bp.blogspot.com/-o58emLpzdUw/X0QWCTapGXI/AAAAAAAAAFk/xY-HJ9Sle90K5tG3DtmqoV0BiosNuA6IQCLcBGAsYHQ/s640/background-img.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	margin: 0 auto;
+    background-size: cover;
+	background-attachment:fixed;
+	text-align:center;
+	height: 750px;
+	margin-top:20px;
+}
+.content_area p {
+	font-size: 35px;
+	color: #FFF;
+	padding-top: 250px;
+	font-family: calligrapher;
+}
+.content_area h1 {
+	color: #FFF;
+	text-align: center;
+	font-family: jester;
+}
+.content_area button {
+	background: transparent;
+	color: #FFF;
+	box-shadow: none;
+	border: 1px solid #FFF;
+	padding: 7px 25px;
+	font-size: 20px;
+	font-style: bold;
+	margin-top: 50px;
+}
+.content_area button:hover {
+	background:#EB5058;
+	color:#FFF;
+	border: 1px solid #EB5058;
+}
+.menu_area {
+	background: url('https://1.bp.blogspot.com/-3cwhkzoPNuo/X0QWL6APK7I/AAAAAAAAAF4/PC4ugjJ83wMlK3LQRxcO5xpvsNSnAOw9QCLcBGAsYHQ/s0/img-1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	margin: 0 auto;
+	background-size: auto;
+	text-align: center;
+	height: 600px;
+}
+.restaurant_view {}
+.restaurant_view h6 {
+	font-size: 35px;
+	font-family: andalus;
+}
+.restaurant_view h1 {
+	font-size: 45px;
+	font-style: bold;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #DDD;
+	font-family: andalus;
+}
+.restaurant_view p {
+	padding-top: 25px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+	font-size: 18px;
+}
+.restaurant_view button {
+	background: transparent;
+	color: #EB5058;
+	box-shadow: none;
+	border: 1px solid #EB5058;
+	padding: 7px 25px;
+	font-size: 20px;
+	font-style: bold;
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+.restaurant_view button:hover {
+	background:#EB5058;
+	color:#FFF;
+	border: 1px solid #EB5058;
+}
+.element_divider_separator {
+	border-style: dashed;
+	border-color: #eb5058;
+	border-width: 1px;
+	height: 100px;
+	display: inline-block;
+}
+.food_menu_header_area {
+	padding-top: 100px;
+}
+.food_menu_header_area h3 {
+	font-size: 40px;
+	padding-bottom: 20px;
+	font-family: andalus;
+}
+.food_menu_header_area h1 {
+	padding-bottom: 20px;
+	border-bottom: 1px solid#DDD;
+	font-family: andalus;
+	font-size: 50px;
+}
+.food_menu_header_area p {
+	padding-top: 10px;
+	padding-right: 160px;
+	padding-left: 160px;
+	color: #CBCCD1;
+}
+.food_menu_area_1 {
+	padding-top: 110px;
+	font-family: Vijaya;
+	font-size: 25px;
+}
+.menu_area_1 {
+	text-align: left;
+	padding-top: 100px;
+}
+.menu_area_1 h1{}
+.menu_area_1 span {
+	font-size: 25px;
+	color: #000;
+}
+.menu_area_1 span:hover {
+	color: #EB5058;
+}
+.menu_area_1 p{
+	color:#A3A3A3;
+}
+.food_menu_area_2 {
+	padding-top: 110px;
+	font-family: Vijaya;
+	font-size: 25px;
+}
+.menu_area_2 {
+	text-align: left;
+	padding-top: 100px;
+}
+.menu_area_2 h1{}
+.menu_area_2 span{
+	font-size: 25px;
+	color: #000;
+}
+.menu_area_2 span:hover {
+	color: #EB5058;
+}
+.menu_area_2 p{
+	color:#A3A3A3;
+}
+.customer_area {
+	background: url('https://1.bp.blogspot.com/-_yd8N6llBZI/X0QWL2QFTwI/AAAAAAAAAF8/Df2x0UtgxCYkgYmj7LcOGqXjqJMwupEfACLcBGAsYHQ/s640/img-2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	margin: 0 auto;
+	background-size: auto;
+	text-align: center;
+	height: 800px;
+	margin-top: 50px;
+}
+.img-4 {
+	margin-top: 100px;
+}
+.img-3 {
+	padding-top: 20px;
+}
+.customer_area h1 {
+	font-size: 40px;
+	margin-top: 25px;
+	border-bottom-width: 10px;
+	border-bottom: 1px solid#DDD;
+	padding-bottom: 30px;
+}
+.customer_area p {
+	margin-top: 30px;
+	padding-right: 110px;
+	padding-left: 110px;
+	font-size: 25px;
+	line-height: 40px;
+	font-family: arial;
+}
+.customer_area h5 {
+	padding-top: 30px;
+	font-size: 20px;
+}
+.customer_area .element_divider {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+.reservation_area {
+	margin-top: 400px;
+	margin-bottom: 100px;
+}
+.reservation_area p {
+	margin-top: 30px;
+	font-size: 30px;
+	margin-bottom: 25px;
+	font-family: Technical;
+	font-weight: bolder;
+}
+.reservation_area h1 {
+	margin-bottom: 50px;
+}
+.reservation_area button{
+	background: transparent;
+	color: #EB5058;
+	box-shadow: none;
+	border: 1px solid #EB5058;
+	padding: 7px 25px;
+	font-size: 20px;
+	font-style: bold;
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+.reservation_area button:hover {
+	background:#EB5058;
+	color:#FFF;
+	border: 1px solid #EB5058;
+}
+.divider {
+	margin-top: -100px;
+}
+.footer_header_area {
+	background:url('https://1.bp.blogspot.com/-0dF9Ly0rOzg/X0QWKUAkeFI/AAAAAAAAAFs/OBpmnwVnJ1AptK1802lADmYh9EeOns9iACLcBGAsYHQ/s640/background-img-2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	margin: 0 auto;
+    background-size: cover;
+	background-attachment:fixed;
+	text-align:center;
+	height: 850px;
+	margin-top:-50px;
+    padding-top:100px;
+}
+.footer_header_area h2 {
+	margin-top: 80px;
+	font-family: andalus;
+	font-size: 40px;
+}
+.footer_header_area h6 {
+	font-family: andalus;
+	font-size: 20px;
+}
+.footer_header_area h5 {
+	margin-top: 100px;
+	color: #6B6161;
+	font-size:30px;
+	font-family: andalus;
+}
+.footer_header_area h1 {}
+.footer_header_area p {
+	font-size: 20px;
+}
+.social_icons {}
+.social_icons .fab {
+	background-color: transparent;
+	font-size: 20px;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50%;
+}
+.social_icons a{
+	color:#000;
+	text-decoration:none;
+}
+.social_icons a:hover {
+	color: #EA5E65;
+	border-color: #EA5E65;
+}
+.footer_bottom_area {
+	padding-top: 40px;
+	color: #BABDC7;
+	padding-bottom: 30px;
+}
+.left_area {
+	width: 100%;
+	text-align: left;
+}
+.right_area {
+	width: 100%;
+	text-align: right;
+}
+   </style>
+</head>
+<body>
+    <div class="header_area">
+    	<div class="container">
+    		<div class="row">
+			    <div class="col-md-4"></div>
+    			<div class="col-md-4">
+				    <h1> WILLY KITCHEN </h1> <br /> <h6> RESTAURANT </h6> <br /> </div>
+			    <div class="col-md-4"></div>
+				<div class="col-md-12"> 
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Menu</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#"> Banquet Facility</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				
+    		</div>
+    	</div>
+    </div>
+    <div class="content_area">
+	    <div class="container">
+		    <div class="row"> 
+			    <div class="col-md-12"> 
+				    <p> Delightful experiences</p>
+			        <h1> <b> Welcome to "Willy Kitchen Restuarant"</b></h1>
+					<button> Reservation </button>
+				</div>
+			</div>
+	    </div>
+    </div>
+    <div class="menu_area">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12"> </div>
+    		</div>
+    	</div>
+    </div>
+	<div class="restaurant_view">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12"> 
+				    <h6> Honest, flavorful food </h6>
+					<h1> A Few Words About Our Restaurant </h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+					<button> Read more </button>
+				<div class="element_divider"> 
+	                <span class="element_divider_separator"> </span>
+	            </div>
+				</div>
+    		</div>
+    	</div>
+    </div>
+	<div class="food_menu_header_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12"> 
+				    <h3> Eat good food </h3>
+					<h1> Have A Quick Look At Our Menus </h1>
+					<p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="food_menu_area_1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6"> 
+				    <div class="menu_area_1"> 
+				        <h1><b> Chef Recommend </b></h1>
+					    <span> Lamb Salad with Fregola? .....................................$32.5? </span> <br /> 
+						<p> Lamb / Fregola</p> <br />
+					    <span> Pappardelle with Sea Urchin &amp; Cauliflower .$59.5</span> <br /> 
+						<p> Pappardelle / Urchin / Cauliflower</p> <br />
+					    <span> Scallop Sashimi with Meyer Lemon Confit ...$40.5</span> <br /> 
+						<p> Sashimi / Lemon</p> <br /> 
+					    <span> Braised Leeks with Mozzarella &amp; Fried Egg .$37.5</span> <br />
+						<p> Leeks / Mozzarella / Egg</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+				    <img alt="" src="https://1.bp.blogspot.com/-1S8vqxUVi54/X0QWKdCOcMI/AAAAAAAAAFw/ONx1TkaVX1QERmdOqwRpNJmEzTi3aYemgCLcBGAsYHQ/s640/food-img-1.png" />
+				</div>
+			</div>
+		</div>
+		<div class="element_divider"> 
+	                <span class="element_divider_separator"> </span>
+	    </div>
+	</div>
+	<div class="food_menu_area_2"> 
+		<div class="container">
+			<div class="row">
+		        <div class="col-md-6"> 
+		            <img alt="" src="https://1.bp.blogspot.com/-Ff4Bil3Lkps/X0QWLZvd4vI/AAAAAAAAAF0/JJNNhljQbIYu0fIHcASKcvGL9vV6sMwwwCLcBGAsYHQ/s640/food-img-2.png" />
+		        </div>
+		        <div class="col-md-6">
+		        <div class="menu_area_2"> 
+				        <h1><b> Chef Recommend </b></h1>
+					    <span> Lamb Salad with Fregola? .....................................$32.5? </span> <br /> 
+						<p> Lamb / Fregola</p> <br />
+					    <span> Pappardelle with Sea Urchin &amp; Cauliflower .$59.5</span> <br /> 
+						<p> Pappardelle / Urchin / Cauliflower</p> <br />
+					    <span> Scallop Sashimi with Meyer Lemon Confit ...$40.5</span> <br /> 
+						<p> Sashimi / Lemon</p> <br /> 
+					    <span> Braised Leeks with Mozzarella &amp; Fried Egg .$37.5</span> <br />
+						<p> Leeks / Mozzarella / Egg</p>
+			    </div>
+		        </div>
+			</div>
+		</div>
+		<div class="element_divider"> 
+	                <span class="element_divider_separator"> </span>
+	    </div>
+	</div>
+	<div class="customer_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12"> 
+				    <img alt="leaf" class="img-4" src="https://1.bp.blogspot.com/-rr5KB_cD5q8/X0QWMk7u2MI/AAAAAAAAAGE/xcSOvF60ubIWGMol08YliIfYpUfA-nt7wCLcBGAsYHQ/s0/img-4.png" />
+				</div>
+				<div class="col-md-12">
+				    <img alt="star" class="img-3" src="https://1.bp.blogspot.com/-rhoot7_oYi0/X0QWMKzSBGI/AAAAAAAAAGA/yAT9seBck9gLYq1eoWqaId_UAAVRlgXygCLcBGAsYHQ/s0/img-3.png" />
+				</div>
+				<div class="col-md-12"> 
+				    <h1> <b> Our Customers Fall In Love With Us </b> </h1>
+					<p> “ By far the best occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. ” </p>
+					<h5> <b> William </b> </h5>
+				</div>
+		    </div>
+		</div>
+		<div class="element_divider"> 
+	                <span class="element_divider_separator"> 
+					    
+					</span>
+	    </div>
+	</div>
+    <div class="reservation_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12"> 
+				    <img alt="" src="https://1.bp.blogspot.com/-rKHPpmjTjgI/X0QWMq84eOI/AAAAAAAAAGI/WDKHg3SVRpANfIHBcrb_ifJZdC9d6ocrwCLcBGAsYHQ/s640/reservation-img.png" />
+				</div>
+				<div class="col-md-12"> 
+				    <p> Join us</p>
+					<h1> <b>Book A Table Now, Come And See Us</b></h1>
+					<button> Reservation </button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	                      <div class="element_divider divider"> 
+	                <span class="element_divider_separator"> 
+					    
+					</span>
+	    </div>
+	<div class="footer_header_area">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-4"></div>
+				<div class="col-md-4"> 
+				    <h2> WILLY KITCHEN </h2>
+					<h6> RESTAURANT</h6>
+					<h5> <b>You can reach us at</b></h5>
+					<h1> +0123456789</h1>
+					
+					<h5> <b>Address</b></h5>
+					<p> <b> 13 Fifth Avenue, New York</b></p>
+				</div>
+				<div class="col-md-4"></div>
+				<div class="col-md-12"> 
+				    <div class="social_icons"> 
+					    <a href="#"> <i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter-square"></i></a>
+						<a href="#"><i class="fab fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="footer_bottom_area">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 left_area"> 
+				    <p><b> Copyright © 2020 Willy Kitchen Restaurant</b></p>
+				</div>
+    			<div class="col-md-6 right_area"> 
+				    <p><b>Designed by, Emamul Kabir</b></p>
+				</div>
+    		</div>
+    	</div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
+</html>  
